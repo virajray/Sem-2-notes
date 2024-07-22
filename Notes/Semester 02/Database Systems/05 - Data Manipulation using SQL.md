@@ -119,7 +119,7 @@ CREATE TABLE Persons (
 );
 ```
 
-### 2. Altering Tables
+### <font color="#00c3ff">2. Altering Tables</font>
 
 `ALTER TABLE` statement is used to add, delete, or modify columns in an existing table.
 
@@ -153,7 +153,7 @@ ALTER TABLE _table_name_
 RENAME COLUMN _old_name_ to _new_name_;
 ```
 
-### 3. Deleting Tables
+### <font color="#ff6000">3. Deleting Tables</font>
  `DROP TABLE` statement is used to drop an existing table in a database.
 
 #### <font color="#00ffab">Syntax</font>
@@ -177,15 +177,30 @@ TRUNCATE TABLE _table_name_;
 ```
 
 
-## SQL Constraints
+## <font color="#00ffab">SQL Constraints</font>
 
 SQL constraints are used to specify rules for the data in a table. 
 • Constraints are used to limit the type of data that can go into a table.
 
-Different constraints: 
-• Required Data (<span style="background:#d2cbff">NOT NULL</span>) 
-• Validity Checking <span style="background:#d2cbff">(CHECK</span>) 
-• Entity Integrity (<span style="background:#d2cbff">PRIMARY KEY</span> & <span style="background:#d2cbff">NOT NULL</span>) 
-• Referential Integrity (<span style="background:#d2cbff">FOREIGN KEY</span>) 
-• Business Rules (<span style="background:#d2cbff">ASSERTION</span>, <span style="background:#d2cbff">TRIGGER</span>) 
-• Consistency (<span style="background:#d2cbff">CASCADE</span>, <span style="background:#d2cbff">RESTRICT</span>, <span style="background:#d2cbff">SET NULL</span>)
+##### Different constraints: 
+ 
+- <span style="background:#d2cbff">NOT NULL</span> - Ensures that a column cannot have a NULL value
+- <span style="background:#d2cbff">UNIQUE</span> - Ensures that all values in a column are different
+- <span style="background:#d2cbff">PRIMARY KEY </span>- A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+- <span style="background:#d2cbff">FOREIGN KEY</span> - Prevents actions that would destroy links between tables
+- <span style="background:#d2cbff">CHECK</span> - Ensures that the values in a column satisfies a specific condition
+- <span style="background:#d2cbff">DEFAULT</span> - Sets a default value for a column if no value is specified
+- <span style="background:#d2cbff">CREATE INDEX</span> - Used to create and retrieve data from the database very quickly
+
+##### Syntax
+
+```sql
+CREATE TABLE _table_name_ (  
+    _column1 datatype_ _constraint_,  
+    _column2 datatype_ _constraint_,  
+    _column3 datatype_ _constraint_,  
+    ....  
+);
+```
+
+# d
