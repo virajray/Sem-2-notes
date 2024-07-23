@@ -26,7 +26,7 @@
 
 - SQL keywords are NOT case sensitive: `select` is the same as `SELECT`
 
-## <font color="#00c3ff">SELECT</font>
+# <font color="#00c3ff">SELECT</font>
 The `SELECT` statement is used to select data from a database.
 
 #### <font color="#92d050">Syntax</font>
@@ -42,6 +42,15 @@ FROM tablename_;
 <font color="#ffff00">example:</font>
 Return all the columns from the Customers table:
 `SELECT * FROM Customers;`
+
+### <font color="#00ffab">SELECT DISTINCT</font>
+```sql
+SELECT DISTINCT Country FROM Customers;
+```
+එක වගේ value තියන ඩේට නැතුව එකිනෙකට වෙනස් ඩේටා විතරක් පෙන්නනවා
+
+ex: කස්ටමස්ල රටවල් කීයක ඉන්නවද බලාගන්ඩ ඕන නම්. එකම රටේ කස්මස්ල 5ක් ඉන්නවන්ම් ඒ වෙනුවට ඒ රටෙන් එකයි පෙන්නන්නෙ. එතකොට වෙනස් ටික විතරක් බලාගන්ඩ පුලුවන් ඩුප්ලිකේට් නැතුව
+
 
 # <font color="#00c3ff">WHERE</font>
 The `WHERE` clause is used to filter records.
