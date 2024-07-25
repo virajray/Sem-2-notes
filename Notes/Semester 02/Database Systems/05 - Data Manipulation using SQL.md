@@ -145,6 +145,20 @@ ALTER TABLE Customers
 ADD Email varchar(255);
 ```
 
+<span style="background:#ff4d4f">Note:</span> query එකේ අගට first කියල දැම්මොත්, table එකේ මුලටම ඒ column එක එනව
+ex:
+```sql
+ALTER TABLE Customers  
+ADD Email varchar(255) first;
+```
+<span style="background:#ff4d4f">Note:</span> query එකේ අගට after කියල දාල ඊට පස්සෙ column එකක නම(<font color="#ffc000">name in this case</font>) දුන්නොත්, ඒ දීපු column එකට(<font color="#ffc000">name</font>) පස්සෙ අපි අලුතින් හදන column එක එනව
+
+```sql
+ALTER TABLE Customers  
+ADD Email varchar(255) after name;
+```
+
+
 ##### To <font color="#ff6000">delete a column in a table</font>, use the following syntax
 ```sql
 ALTER TABLE _table_name_  
@@ -212,4 +226,25 @@ CREATE TABLE _table_name_ (
 );
 ```
 
-# d
+# Functions
+
+| Function      | What it do                                                   |
+| ------------- | ------------------------------------------------------------ |
+| `COUNT()`     | Returns the number of rows that match a specified condition. |
+| `SUM()`       | Adds up the values in a numeric column.                      |
+| `AVG()`       | Calculates the average value of a numeric column.            |
+| `MIN()`       | Returns the smallest value in a set of values.               |
+| `MAX()`       | Returns the largest value in a set of values.                |
+| `LENGTH()`    | Returns the length of a string.                              |
+| floor()       | දශම අයින් කරල ආසන්නම සංක්‍යාවට වටයනව                         |
+| `UPPER()`     | Converts a string to uppercase.                              |
+| `LOWER()`     | Converts a string to lowercase.                              |
+| `ROUND()`     | Rounds a numeric field to the number of decimals specified.  |
+| `NOW()`       | Returns the current date and time.                           |
+| `COALESCE()`  | Returns the first non-null value in a list.                  |
+| `SUBSTRING()` | Extracts a substring from a string.                          |
+| `TRIM()`      | Removes leading and trailing spaces from a string.           |
+| `CONCAT()`    | Concatenates two or more strings.                            |
+| `CAST()`      | Converts a value from one data type to another.              |
+| `DATE()`      | Extracts the date part of a date or datetime expression.     |
+|               |                                                              |
