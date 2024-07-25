@@ -56,3 +56,10 @@ instability of new software to inter-operate with existing software.
     Encouraging ongoing, incremental improvements by empowering employees at all levels to identify and implement enhancements.
 - **Benchmarking**:
 	-  Comparing processes and performance metrics against industry standards 
+
+## Spiral agile nemeiii ⚠
+
+## In XP Programming
+- requirements are recorded on story cards.
+- an automated unit test framework is used in writing tests even before starting implementation.
+- developers are expected to refactor the code continuously.
